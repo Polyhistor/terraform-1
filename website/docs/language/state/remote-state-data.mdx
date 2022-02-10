@@ -93,7 +93,7 @@ Terraform configurations.
 
 ```hcl
 data "terraform_remote_state" "vpc" {
-  backend = "remote"
+  backend = "remote"   // could be S3 for instance
 
   config = {
     organization = "hashicorp"
